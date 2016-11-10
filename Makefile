@@ -1,5 +1,5 @@
 ISE_BIN = /opt/xilinx/14.7/ISE_DS/ISE/bin/lin64
-SATURN_LOADER = /opt/saturn-loader
+NUMATO_LOADER = /opt/numato-loader
 
 all: saturn.bin
 
@@ -18,7 +18,7 @@ saturn.bin: $(wildcard *.v)
 	$(ISE_BIN)/bitgen -intstyle ise -f saturn.ut saturn.ncd
 
 flash: saturn.bin
-	$(SATURN_LOADER) saturn.bin
+	$(NUMATO_LOADER) saturn.bin
 
 clean:
 	$(RM) -r _ngo _xmsgs xlnx_auto_0_xdb xst
