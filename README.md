@@ -11,7 +11,7 @@ saturn is a command line project that allows development and flashing of HDL
 code. No GUI is necessary to develop hardware code using this project. This
 project also contains support for flashing using numato-loader:
 
-http://github.com/amilkovich/numato-loader
+https://github.com/amilkovich/numato-loader
 
 ### What license is saturn release under?
 
